@@ -21,4 +21,3 @@ def save_exception(self, exception_type, exception_string, exception_repr, excep
     from main.models import Main
     main = Main(exception_type=exception_type, exception_string=exception_string, exception_repr=exception_repr, exception_args=exception_args, exception_traceback=exception_traceback)
     main.save()
-    print(exception)
